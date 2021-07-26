@@ -1,0 +1,439 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway', sans-serif;
+    --accent-color: #2196f3;
+    --backlight-color: #188ce8;
+    --main-text-color: #757575;
+    --heading-color: #212121;
+    --dark-background-text-color: #ffffff;
+    --section-background-color: #2f303a;
+    --logo-color: #000000;
+    --footer-contacts-color: #ffffff99;
+    --accent-background-color: #f5f4fa;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  body {
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    letter-spacing: 0.03em;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .logo-web {
+    color: var(--accent-color);
+  }
+  
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  
+    /* outline: 1px solid tomato; */
+  }
+  
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+    /* outline: 1px solid tomato; */
+  }
+  
+  /*===header===*/
+  
+  .header {
+    border-bottom: 1px solid #ececec;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation {
+    display: flex;
+  }
+  
+  .nav-item:not(:last-child),
+  .contacts-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacts-list {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .header .logo-link {
+    margin-right: 95px;
+  }
+  
+  .logo-link {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  
+  .logo-studio {
+    color: var(--logo-color);
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--heading-color);
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus,
+  .mail-link:hover,
+  .mail-link:focus,
+  .tel-link:hover,
+  .tel-link:focus {
+    color: var(--accent-color);
+  }
+  
+  .nav-item .link.current {
+    color: var(--accent-color);
+  }
+  
+  .mail-link,
+  .tel-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+  }
+  
+  /*===header end===*/
+  
+  /*===hero studio===*/
+  
+  .hero-container {
+    text-align: center;
+  }
+  
+  .hero {
+    background-color: var(--section-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  
+  .hero-title {
+    margin: 0 auto 30px;
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--dark-background-text-color);
+  }
+  .modal-button {
+    min-width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--dark-background-text-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
+  
+  .modal-button:hover,
+  .modal-button:focus {
+    background-color: var(--backlight-color);
+  }
+  
+  /*===hero studio end===*/
+  
+  /*===features studio===*/
+  
+  .features {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+  
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  
+  .features-item {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
+  .features-item-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--heading-color);
+  }
+  
+  .features-item-text {
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
+  /*===features studio end===*/
+  
+  /* ===activity=== */
+  .activity {
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
+  
+  .activity-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  
+  .activity-list-item {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
+  /* ===activity end=== */
+  
+  /*===team studio===*/
+  
+  .team {
+    background-color: var(--accent-background-color);
+  }
+  
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  
+  .team-list-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--dark-background-text-color);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .team-member {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  .activity-title,
+  .team-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--heading-color);
+  }
+  
+  .team-member-name {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--heading-color);
+  }
+  
+  .team-member-position {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  
+  /*===team studio end===*/
+  
+  /*===portfolio filters===*/
+  
+  .filters-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .filters-portfolio:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  .filter-buttons {
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--heading-color);
+    background-color: var(--accent-background-color);
+    cursor: pointer;
+  }
+  
+  .filter-buttons:hover,
+  .filter-buttons:focus {
+    color: var(--dark-background-text-color);
+    background-color: var(--accent-color);
+  }
+  /*===portfolio filters end===*/
+  
+  /*===portfolio examples===*/
+  
+  .examples-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  
+  .example-signature {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--accent-background-color);
+    border-left: 1px solid var(--accent-background-color);
+    border-right: 1px solid var(--accent-background-color);
+  }
+  
+  .example-card {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .example-title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--heading-color);
+  }
+  
+  .example-descr {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--main-text-color);
+  }
+  
+  .abbr {
+    text-transform: uppercase;
+  }
+  
+  /*===portfolio examples end===*/
+  
+  /*===footer===*/
+  
+  .footer {
+    background-color: var(--section-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .logo-studio-dark-background {
+    color: var(--dark-background-text-color);
+  }
+  
+  address {
+    margin-top: 20px;
+  }
+  
+  /* .footer .logo-link {
+    margin-bottom: 20px;
+  } */
+  
+  /* не работает margin-bottom для logo-link в футере, пробовала разные варианты селектора, не могу понять почему */
+  
+  .address-list-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  .address-list-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
+  .address-link {
+    color: var(--dark-background-text-color);
+  }
+  
+  .address-mail-link,
+  .address-tel-link {
+    color: var(--footer-contacts-color);
+  }
+  
+  .address-link:hover,
+  .address-link:focus,
+  .address-mail-link:hover,
+  .address-mail-link:focus,
+  .address-tel-link:hover,
+  .address-tel-link:focus {
+    color: var(--accent-color);
+  }
+  /*===footer end===*/
