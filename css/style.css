@@ -46,6 +46,19 @@ align-items: center;}
     color: var(--main-text-color);
     letter-spacing: 0.03em;
   }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
   .nav-link link{
     width: 49px;
     height: 16px;
@@ -113,14 +126,14 @@ color: #FFFFFF;}
   }
   
   /*===header===*/
-  .slide-container{
-    text-align: center;
-  }
-  .skider {
-    background-color: var(--section-background-color);
+  
+    
+  .slide-container {
+    text-align: center;background-color: var(--section-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
   }
+  
   .hero-description{
     margin: 0 auto 30px;
     width: 696px;
